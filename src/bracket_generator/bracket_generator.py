@@ -21,8 +21,13 @@ References:
 """
 
 import argparse
+import bracket_generator.team
+import bracket_generator.game
+import bracket_generator.bracket
 import logging
+import os
 import sys
+import yaml
 
 from bracket_generator import __version__
 
@@ -31,29 +36,6 @@ __copyright__ = "topgolfci"
 __license__ = "MIT"
 
 _logger = logging.getLogger(__name__)
-
-
-# ---- Python API ----
-# The functions defined in this section can be imported by users in their
-# Python scripts/interactive interpreter, e.g. via
-# `from bracket_generator.skeleton import fib`,
-# when using this Python module as a library.
-
-
-def fib(n):
-    """Fibonacci example function
-
-    Args:
-      n (int): integer
-
-    Returns:
-      int: n-th Fibonacci number
-    """
-    assert n > 0
-    a, b = 1, 1
-    for _i in range(n - 1):
-        a, b = b, a + b
-    return a
 
 
 # ---- CLI ----
@@ -72,13 +54,12 @@ def parse_args(args):
     Returns:
       :obj:`argparse.Namespace`: command line parameters namespace
     """
-    parser = argparse.ArgumentParser(description="Just a Fibonacci demonstration")
+    parser = argparse.ArgumentParser(description="NCAA Bracket Generator")
     parser.add_argument(
-        "--version",
-        action="version",
-        version=f"bracket-generator {__version__}",
+        "--config",
+        dest="config_path",
+        help="path to a yaml config file with the tournament config",
     )
-    parser.add_argument(dest="n", help="n-th Fibonacci number", type=int, metavar="INT")
     parser.add_argument(
         "-v",
         "--verbose",
@@ -122,9 +103,24 @@ def main(args):
     """
     args = parse_args(args)
     setup_logging(args.loglevel)
-    _logger.debug("Starting crazy calculations...")
-    print(f"The {args.n}-th Fibonacci number is {fib(args.n)}")
-    _logger.info("Script ends here")
+    _logger.debug("Starting bracket generator...")
+
+    # Load the config file
+    with open(args.config_path, "r") as file:
+        config = yaml.safe_load(file)
+    # _logger.debug(config)
+    # _logger.debug(config["east"][0])
+
+    # Create the bracket object
+    bracket = bracket_generator.bracket.Bracket(config)
+
+    # Run the simulation
+    bracket.simulate()
+
+    # Print the results
+    # bracket.printResults()
+
+    _logger.debug("Bracket generation is done...")
 
 
 def run():

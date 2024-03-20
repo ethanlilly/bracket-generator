@@ -1,0 +1,132 @@
+east:
+  - team1: UConn
+    seed1: 1
+    team2: Stetson
+    seed2: 16
+  - team1: FAU
+    seed1: 8
+    team2: Northwestern
+    seed2: 9
+  - team1: San Diego St.
+    seed1: 5
+    team2: UAB
+    seed2: 12
+  - team1: Auburn
+    seed1: 4
+    team2: Yale
+    seed2: 13
+  - team1: BYU
+    seed1: 6
+    team2: Duquesne
+    seed2: 11
+  - team1: Illinois
+    seed1: 3
+    team2: Morehead St.
+    seed2: 14
+  - team1: Washington St.
+    seed1: 7
+    team2: Drake
+    seed2: 10
+  - team1: South Dakota St.
+    seed1: 15
+    team2: Iowa state
+    seed2: 2
+west:
+  - team1: North Carolina
+    seed1: 1
+    team2: HOW/WAG
+    seed2: 16
+  - team1: Mississippi St.
+    seed1: 8
+    team2: Michigan St.
+    seed2: 9
+  - team1: Saint Mary's
+    seed1: 5
+    team2: Grand Canyon
+    seed2: 12
+  - team1: Alabama
+    seed1: 4
+    team2: Charleston
+    seed2: 13
+  - team1: Clemson
+    seed1: 6
+    team2: New Mexico
+    seed2: 11
+  - team1: Baylor
+    seed1: 3
+    team2: Colgate
+    seed2: 14
+  - team1: Dayton
+    seed1: 7
+    team2: Nevada
+    seed2: 10
+  - team1: Arizona
+    seed1: 2
+    team2: LBSU
+    seed2: 15
+midwest:
+  - team1: Purdue
+    seed1: 1
+    team2: MTST/GRAM
+    seed2: 16
+  - team1: Utah St.
+    seed1: 8
+    team2: TCU
+    seed2: 9
+  - team1: Gonzaga
+    seed1: 5
+    team2: Mcneese
+    seed2: 12
+  - team1: Kansas
+    seed1: 4
+    team2: Samford
+    seed2: 13
+  - team1: S. Carolina
+    seed1: 6
+    team2: Oregon
+    seed2: 11
+  - team1: Creighton
+    seed1: 3
+    team2: Akron
+    seed2: 14
+  - team1: Texas
+    seed1: 7
+    team2: UVA/COL St.
+    seed2: 10
+  - team1: Tennesse
+    seed1: 2
+    team2: St. Peters
+    seed2: 15
+south:
+  - team1: Houston
+    seed1: 1
+    team2: Longwood
+    seed2: 16
+  - team1: Nebraska
+    seed1: 8
+    team2: Texas A&M
+    seed2: 9
+  - team1: Wisconsin
+    seed1: 5
+    team2: James Maddison
+    seed2: 12
+  - team1: Duke
+    seed1: 4
+    team2: Vermont
+    seed2: 13
+  - team1: Texas Tech
+    seed1: 6
+    team2: NC State
+    seed2: 11
+  - team1: Kentucky
+    seed1: 3
+    team2: Oakland
+    seed2: 14
+  - team1: Florida
+    seed1: 7
+    team2: Boise/Colorado
+    seed2: 10
+  - team1: Marquette
+    seed1: 2
+    team2: W. Kentucky
+    seed2: 15

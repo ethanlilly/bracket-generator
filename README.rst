@@ -34,11 +34,26 @@ bracket-generator
 =================
 
 
-    Add a short description here!
+    This is a simple python based bracket generator for the NCAA tournament.
 
 
-A longer description of your project goes here...
+The odds are controlled in the src/bracket_generator/game.py class and are used
+in the simulate() function to determine a winner based on seeding.
 
+Usage:
+* run the following to setup a python environment
+```
+python3 -m venv venv
+. venv/bin/activate
+```
+* the from the top level run `pip install .` to setup the virtual env
+* update the config/test_bracket.yaml config file for this year's tournament
+* once thats done you cna simply run `bracket_generator --config config/test_bracket.yaml -vv`
+
+To Do:
+* Update the tests to be more robust
+* Update the odds with something more complex and based on historicals
+* Update the output so you don't have to use verbose logging and so it looks cleaner
 
 .. _pyscaffold-notes:
 

@@ -1,0 +1,48 @@
+east:
+  - team1: UConn
+    seed1: 1
+    team2: Stetson
+    seed2: 16
+  - team1: South Dakota St.
+    seed1: 15
+    team2: Iowa state
+    seed2: 2
+  - team1: Illinois
+    seed1: 3
+    team2: Morehead St.
+    seed2: 14
+  - team1: Auburn
+    seed1: 4
+    team2: Yale
+    seed2: 13
+  - team1: San Diego St.
+    seed1: 5
+    team2: UAB
+    seed2: 12
+  - team1: BYU
+    seed1: 6
+    team2: Duquesne
+    seed2: 11
+  - team1: Washington St.
+    seed1: 7
+    team2: Drake
+    seed2: 10
+  - team1: FAU
+    seed1: 8
+    team2: Northwestern
+    seed2: 9
+west:
+  - team1: North Carolina
+    seed1: 1
+    team2: HOW/WAG
+    seed2: 16
+south:
+  - team1: Houston
+    seed1: 1
+    team2: Longwood
+    seed2: 16
+midwest:
+  - team1: Purdue
+    seed1: 1
+    team2: MTST/GRAM
+    seed2: 16
